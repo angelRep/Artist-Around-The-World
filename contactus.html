@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>Famous Artists Around The World</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="./js/myfunctions.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="intro-section">
+      
+      <header>
+        <div class="header-logo">
+          <a href="./index.html"><img src="./images/artists_logo.png" alt="Logo" width="70" /></a>
+
+          <h1 class="logo-heading">Famous Artists<br>Around The World</h1>
+        </div>
+
+        <div class="nav-bar">
+          <a href="./index.html">HOME</a>
+          <a href="./artists.html">ARTISTS</a>
+          <a href="./aboutus.html">ABOUT US</a>
+          <a href="./contactus.html">CONTACT US</a>
+        </div>
+      </header>
+      
+      <div  class="header-section">
+          <h1>CONTACT US</h1>
+      </div>
+    </div>
+
+    <main>
+      <div class="contact-form">
+        <form>
+          <label for="fullname">Fullname : </label>
+          <input id="fullname" placeholder="Your fullname" maxlength="30"/>
+          <br>
+          <label for="subject">Subject : </label>
+          <input id="subject" placeholder="What is the subject?" maxlength="40" />
+          <br>
+          <label for="message">Your message : </label>
+          <textarea id="message" name="message" rows="4" cols="50">Write your message here...</textarea>
+          <br>
+          <btn class="body-btn" onclick="submit()">SEND</btn>
+        </form>
+      </div>
+
+      <div class="faq-section" id="faq">
+        <h3>FAQ</h3>
+        <p>Question 1</p>
+        <p>Answer 1</p>
+        
+        <p>Question 2</p>
+        <p>Answer 2</p>
+        
+        <p>Question 3</p>
+        <p>Answer 3</p>
+      </div>
+    </main>
+
+
+    <footer>
+      
+        <img src="./images/artists_logo.png" alt="Logo" width="80" />
+        
+        <div class="footer-links">
+          <div class="column">
+            <h3>FAMOUS ARTISTS AROUND THE WORLD</h3>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./artists.html">Famous Artists</a>
+          </div>
+          
+          <div class="column">
+            <h3>SUPPORT</h3>
+            <a href="./contactus.html">Contact Us</a>
+            <a href="./contactus.html#faq">FAQ</a>
+          </div>
+          
+          <div class="column">
+            <h3>SOCIAL MEDIA</h3>
+            
+            <div class="social-media-icons">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb-icon.svg" alt="Facebook Icon" width="30"/></a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta-icon.svg" alt="Instagram Icon" width="30"/></a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="./images/twitter-icon.svg" alt="Twitter Icon" width="30"/></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-end">
+          <p>@ 2022 - FamousArtistsAroundTheWorld.com</p>
+        </div>
+      </footer>
+    </body>
+</html>
