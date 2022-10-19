@@ -33,18 +33,21 @@
     </div>
 
     <main>
-      <div class="contact-form">
+      <div class="contact-form" action="sendContactForm()">
         <form>
           <label for="fullname">Fullname : </label>
-          <input id="fullname" placeholder="Your fullname" maxlength="30"/>
+          <input id="fullname" name="fullname" placeholder="Your fullname" maxlength="30" required/>
+          <br>
+          <label for="email">Email : </label>
+          <input id="email" name="email" placeholder="What is your email?" maxlength="60" required />
           <br>
           <label for="subject">Subject : </label>
-          <input id="subject" placeholder="What is the subject?" maxlength="40" />
+          <input id="subject" name="subject" placeholder="What is the subject?" maxlength="40" required />
           <br>
           <label for="message">Your message : </label>
           <textarea id="message" name="message" rows="4" cols="50">Write your message here...</textarea>
           <br>
-          <btn class="body-btn" onclick="submit()">SEND</btn>
+          <input class="body-btn" type="submit" value="SEND"/>
         </form>
       </div>
 
