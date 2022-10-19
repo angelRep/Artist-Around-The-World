@@ -21,6 +21,7 @@ body {
   background-color: #478fb6;
   border-radius: 20px;
   box-shadow: 2px 2px #999999;
+  font-size: 2vw;
 }
 
 .body-btn:hover {
@@ -39,6 +40,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -48,6 +50,7 @@ header {
 }
 
 .nav-bar {
+  margin-right: 5px;
   align-self: flex-end;
 }
 
@@ -57,6 +60,7 @@ header {
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 20px;
+  font-size: calc(8px + 1vw);
 }
 
 .nav-bar > a:hover {
@@ -76,11 +80,16 @@ header {
 .welcome-section .welcome-text {
   position: absolute;
   top: 20%;
-  left: 20px;
+  left: 5px;
+}
+
+.welcome-section .welcome-text h1 {
+  font-size: 4vw;
 }
 
 .welcome-section .welcome-text p {
   margin: 0 0 30px 0;
+  font-size: 2vw;
 }
 
 .tab {
@@ -321,4 +330,33 @@ footer {
 .developer p, .developer ul {
   margin-top: 10px;
   text-align: left;
+}
+
+
+/*********************************/
+/*         @MEDIA SCREEN         */
+/*********************************/
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+  header {
+    display: block;
+  }
+  .nav-bar {
+    text-align: right;
+  }
+  .body-btn {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: rgb(209, 173, 230);
+  }
+  header {
+    display: block;
+  }
+
 }
