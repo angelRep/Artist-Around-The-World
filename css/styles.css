@@ -89,7 +89,6 @@ header {
 
 .welcome-section .welcome-text p {
   margin: 0 0 30px 0;
-  font-size: 2vw;
 }
 
 .tab {
@@ -347,7 +346,7 @@ footer {
     text-align: right;
   }
   .body-btn {
-    font-size: 14px;
+    font-size: 12px;
   }
   .category-card-container {
     grid-template-columns: auto auto;
