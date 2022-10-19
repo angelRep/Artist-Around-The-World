@@ -354,12 +354,13 @@ footer {
   }
   
   
-  .footer-links {
+  .footer-links, .developers {
     flex-direction: column;
   }
-  .footer-links .column {
+  .footer-links .column, .developers .developer {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     width: 44vw;
     font-size: 14px;
   }
