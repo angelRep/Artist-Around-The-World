@@ -60,7 +60,7 @@ header {
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 20px;
-  font-size: calc(8px + 1vw);
+  font-size: calc(8px + 0.7vw);
 }
 
 .nav-bar > a:hover {
