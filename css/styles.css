@@ -361,6 +361,15 @@ footer {
   text-decoration: overline underline dashed #478fb6;
 }
 
+.about-text {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5px;
+  text-align: justify;
+  width: 50%;
+}
+
 .developers {
   display: flex;
   flex-direction: row;
@@ -451,9 +460,6 @@ input:focus {
 /*         @MEDIA SCREEN         */
 /*********************************/
 @media only screen and (max-width: 900px) {
-  body {
-    background-color: lightblue;
-  }
   header {
     display: block;
   }
@@ -494,9 +500,6 @@ input:focus {
 }
 
 @media only screen and (max-width: 550px) {
-  body {
-    background-color: rgb(209, 173, 230);
-  }
   .logo-heading {
     display: none;
   }
@@ -514,5 +517,9 @@ input:focus {
   }
   #hamburger-menu {
     display: inline;
+  }
+
+  .about-text {
+    width: 80%;
   }
 }
