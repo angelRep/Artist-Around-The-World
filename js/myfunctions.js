@@ -68,6 +68,20 @@ const artists = [
 ];
 
 /*Functions*/
+function openCategory(evt, categoryName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(categoryName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
 function sendContactForm() {
     let fname = document.getElementById("fullname");
     let email = document.getElementById("email");
@@ -92,8 +106,6 @@ function showOrHideElement(item_id) {
       x.style.display = "none";
     }
 }
-
-function readArtists() {}
 
 function showArtists(category) {
     //let artists = readArtists();
