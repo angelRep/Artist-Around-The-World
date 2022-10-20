@@ -250,6 +250,7 @@ header {
 
 .category-card-container {
   margin-top: 30px;
+  margin-bottom: 60px;
   max-width: 1000px;
   max-height: 1000px;
   display: grid;
@@ -290,7 +291,12 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.contact-us-section {
+  margin-top: 80px;
+}
+
 .contact-us-section * {
+  margin-top: 50px;
   margin-bottom: 25px;
 }
 
@@ -502,6 +508,9 @@ input:focus {
 @media only screen and (max-width: 550px) {
   .logo-heading {
     display: none;
+  }
+  .contact-us-section {
+    margin-top: 480px;
   }
   .category-card-container {
     margin-left: 15%;
