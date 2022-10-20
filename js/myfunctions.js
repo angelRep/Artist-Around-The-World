@@ -98,6 +98,11 @@ function readArtists() {}
 function showArtists(category) {
     //let artists = readArtists();
     let container = document.getElementById('artists-container');
+
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+   
     container.style.margin = "30px 0px";
     container.style.marginLeft = "auto";
     container.style.marginRight = "auto";
@@ -105,10 +110,32 @@ function showArtists(category) {
     container.style.display = "flex";
     container.style.flexDirection = "row";
     container.style.flexWrap = "wrap";
+    container.style.gap = "15px";
     container.style.textAlign = "center";
     
     let showartists = artists;
     if (category == "0") { showartists = artists}
+    else if (category == "1") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Music");
+    })}
+    else if (category == "2") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Performing");
+    })}
+    else if (category == "3") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Cinema");
+    })}
+    else if (category == "4") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Painting");
+    })}
+    else if (category == "5") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Literature");
+    })}
+    else if (category == "6") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Architecture");
+    })}
+    else if (category == "7") {showartists = artists.filter(artist =>  {
+        return artist.category.includes("Sculpture");
+    })}
 
     for(i=0; i<showartists.length; i++){
         let artist = showartists[i];
@@ -116,7 +143,7 @@ function showArtists(category) {
         artist_card.style.margin = "10px 0px";
         artist_card.style.marginLeft = "auto";
         artist_card.style.marginRight = "auto";
-        artist_card.style.padding = "5px";
+        artist_card.style.padding = "7px";
         artist_card.style.textAlign = "center";
         artist_card.style.maxWidth = "300px";
         artist_card.style.backgroundColor = "#478fb6";
@@ -136,6 +163,7 @@ function showArtists(category) {
         picture.style.maxHeight = "50%";
         picture.style.maxWidth = "100%";
         picture.style.marginBottom = "5px";
+        picture.style.overflow = "hidden";
         artist_card.appendChild(picture);
 
         const name = document.createElement("h3");

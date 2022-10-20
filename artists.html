@@ -8,7 +8,7 @@
     <script src="./js/myfunctions.js"></script>
   </head>
   
-  <body>
+  <body onload="showArtists('0')">
     
     <div class="intro-section">
       
@@ -49,7 +49,7 @@
       <div class="select-input">
         <select onchange="showArtists(value)">
           <option value="0" selected>All Categories</option>
-          <option value="1">Music</option>
+          <option value="1" >Music</option>
           <option value="2">Performing</option>
           <option value="3">Cinema</option>
           <option value="4">Painting</option>

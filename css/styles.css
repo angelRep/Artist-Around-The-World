@@ -390,6 +390,13 @@ footer {
 }
 
 
+/*Artists Page*/
+.select-input select {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
 /*Contact Us Page*/
 .contact-form {
   margin: 40px 0px;
