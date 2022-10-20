@@ -27,24 +27,28 @@
         </div>
       </header>
       
-      <div  class="header-section">
+      <div class="header-section">
           <h1>CONTACT US</h1>
       </div>
     </div>
 
     <main>
-      <div class="contact-form" action="sendContactForm()">
-        <form>
-          <label for="fullname">Fullname : </label>
-          <input id="fullname" name="fullname" placeholder="Your fullname" maxlength="30" required/>
+      <div id="contact-form" class="contact-form">
+        <form onsubmit="sendContactForm()">
+          <label for="fullname">Fullname</label>
           <br>
-          <label for="email">Email : </label>
-          <input id="email" name="email" placeholder="What is your email?" maxlength="60" required />
+          <input id="fullname" name="fullname" type="text" placeholder="Your fullname" maxlength="30" required/>
           <br>
-          <label for="subject">Subject : </label>
-          <input id="subject" name="subject" placeholder="What is the subject?" maxlength="40" required />
+          <label for="email">Email</label>
           <br>
-          <label for="message">Your message : </label>
+          <input id="email" name="email" type="email" placeholder="What is your email?" maxlength="60" required />
+          <br>
+          <label for="subject">Subject</label>
+          <br>
+          <input id="subject" name="subject" type="text" placeholder="What is the subject?" maxlength="40" required />
+          <br>
+          <label for="message">Your message</label>
+          <br>
           <textarea id="message" name="message" rows="4" cols="50">Write your message here...</textarea>
           <br>
           <input class="body-btn" type="submit" value="SEND"/>
@@ -52,15 +56,20 @@
       </div>
 
       <div class="faq-section" id="faq">
-        <h3>FAQ</h3>
-        <p>Question 1</p>
-        <p>Answer 1</p>
+        <h1 class="header-section">FAQ</h1>
+        <p id="question1" class="question" onclick="showOrHideElement('answer1')">How can I add a famous and inspiring artist in your website?</p>
+        <p id="answer1" class="answer" hidden>If you would like to  add a famous and inspiring artist in our website just fill our contact form. 
+          Write as a subject "Add a new artist" and message us their details(name, country, artistic category, a few words).
+        </p>
         
-        <p>Question 2</p>
-        <p>Answer 2</p>
+        <p id="question2" class="question" onclick="showOrHideElement('answer2')">Can I message you more than one artist?</p>
+        <p id="answer2" class="answer" hidden>Yes! Just write as a subject "Add new atists" and their details
+          (name, country, artistic category, a few words).
+        </p>
         
-        <p>Question 3</p>
-        <p>Answer 3</p>
+        <p id="question3" class="question" onclick="showOrHideElement('answer3')">I would like to ask something else.</p>
+        <p id="answer3" class="answer" hidden>Please, feel free to message us though the above <a href="#contact-form">contact form</a>
+          for any question you have regarding our website!"></form></p>
       </div>
     </main>
 
@@ -100,5 +109,11 @@
           <p>@ 2022 - FamousArtistsAroundTheWorld.com</p>
         </div>
       </footer>
+
+      <script>
+        showOrHideElement('answer1')
+        showOrHideElement('answer2')
+        showOrHideElement('answer3')
+      </script>
     </body>
 </html>
