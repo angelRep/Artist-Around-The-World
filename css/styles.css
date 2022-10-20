@@ -222,6 +222,7 @@ header {
 }
 
 .artist-card {
+  min-width: 33%;
   border-radius: 20px;
   padding: 5px;
   transition: 0.8s;
