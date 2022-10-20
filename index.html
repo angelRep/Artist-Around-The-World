@@ -18,16 +18,29 @@
 
           <h1 class="logo-heading">Famous Artists<br>Around The World</h1>
         </div>
-
+        
         <div class="nav-bar">
           <a href="./index.html">HOME</a>
           <a href="./artists.html">ARTISTS</a>
           <a href="./aboutus.html">ABOUT US</a>
           <a href="./contactus.html">CONTACT US</a>
         </div>
+
+        <input type="checkbox" id="hamburger-input" class="burger-shower" onchange="showOrHideElement('welcome')"/>
+        <label id="hamburger-menu" for="hamburger-input">
+          <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <a href="./index.html">HOME</a>
+            <a href="./artists.html">ARTISTS</a>
+            <a href="./aboutus.html">ABOUT US</a>
+            <a href="./contactus.html">CONTACT US</a>
+          </nav>
+        </label>
+
+        <div class="overlay"></div>
       </header>
       
-      <div  class="welcome-section">
+      <div id="welcome" class="welcome-section">
         <img src="./images/artist background.png" alt="" />
         <div class="welcome-text">
           <h1>Welcome to Famous<br>Artists Around The World!</h1>

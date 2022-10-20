@@ -54,7 +54,7 @@ header {
   align-self: flex-end;
 }
 
-.nav-bar > a {
+.nav-bar > a, #hamburger-menu a {
   color: #000000;
   padding: 5px 10px;
   text-decoration: none;
@@ -63,11 +63,69 @@ header {
   font-size: calc(8px + 0.7vw);
 }
 
-.nav-bar > a:hover {
+#hamburger-menu a  {
+  display: block;
+}
+
+.nav-bar > a:hover, #hamburger-menu a:hover {
   background-color: #478fb6;
   border-width: 1px;
   font-weight: 600;
 }
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #478fb6, #478fb6 20%, 
+      transparent 20%, transparent 40%, 
+      #478fb6 40%, #478fb6 60%, 
+      transparent 60%, transparent 80%, 
+      #478fb6 80%, #478fb6 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #478fb6;
+  font-size: 2.2rem;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 50vw;
+}
+#hamburger-input:checked ~ .overlay{
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 .welcome-section {
   position: relative;
@@ -429,8 +487,8 @@ input:focus {
   body {
     background-color: rgb(209, 173, 230);
   }
-  header {
-    display: block;
+  .logo-heading {
+    display: none;
   }
   .latest-artists {
     flex-direction: column;
@@ -444,4 +502,10 @@ input:focus {
     width:70%;
   }
 
+  .nav-bar {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
 }
