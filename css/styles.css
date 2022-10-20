@@ -338,6 +338,10 @@ footer {
   padding: 5px;
 }
 
+.contact-form label {
+  font-style: bold;
+}
+
 .contact-form form input, .contact-form form textarea {
   padding: 10px;
   border-radius: 20px;
@@ -345,6 +349,15 @@ footer {
   max-width: 500px;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+input:focus {
+  border-color: #478fb6;
+}
+
+.contact-form input::placeholder, textarea::placeholder {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .faq-section * {
