@@ -47,7 +47,7 @@
 
     <main>
       <div class="select-input">
-        <select onchange="refreshArtists()">
+        <select onchange="showArtists(value)">
           <option value="0" selected>All Categories</option>
           <option value="1">Music</option>
           <option value="2">Performing</option>
@@ -58,6 +58,8 @@
           <option value="7">Sculpture</option>
         </select>
       </div>
+
+      <div id="artists-container" class="artists-container" onload="showArtists('0')"></div>
     </main>
 
 
