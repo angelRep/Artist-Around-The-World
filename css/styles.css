@@ -22,7 +22,7 @@ body {
   background-color: #478fb6;
   border-radius: 20px;
   box-shadow: 2px 2px #999999;
-  font-size: 2vw;
+  font-size: calc(10px + 0.5vw);
 }
 
 .body-btn:hover {
@@ -84,7 +84,7 @@ header {
 }
 
 .welcome-section .welcome-text h1 {
-  font-size: 4vw;
+  font-size: calc(12px + 2vw);
 }
 
 .welcome-section .welcome-text p {
@@ -107,7 +107,7 @@ header {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: calc(10px + 1vw);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -398,6 +398,9 @@ input:focus {
   .body-btn {
     font-size: 12px;
   }
+  .welcome-section .welcome-text btn {
+    padding: 7.5px;
+  }
   .category-card-container {
     grid-template-columns: auto auto;
   }
@@ -415,6 +418,10 @@ input:focus {
   }
   .footer-links .column * {
     text-align: center;
+  }
+
+  .contact-form form input, .contact-form form textarea, .faq-section * {
+    width: 80%;
   }
 }
 
