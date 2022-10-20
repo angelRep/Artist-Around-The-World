@@ -190,3 +190,24 @@ function showArtists(category) {
         container.appendChild(artist_card);
     }
 }
+
+function getLatestArtists() {
+    let latest1 =  document.getElementById("latest-artist-1");
+    let latest2 = document.getElementById("latest-artist-2");
+    let latest3 = document.getElementById("latest-artist-3");
+
+    latest1.children[0].src = artists[artists.length-1]["image"];
+    latest1.children[1].innerText = artists[artists.length-1]["name"];
+    latest1.children[2].innerText = artists[artists.length-1]["category"];
+    latest1.children[3].innerText = artists[artists.length-1]["details"];
+
+    latest2.children[0].src = artists[artists.length-2]["image"];
+    latest2.children[1].innerText = artists[artists.length-2]["name"];
+    latest2.children[2].innerText = artists[artists.length-2]["category"];
+    latest2.children[3].innerText = artists[artists.length-2]["details"];
+
+    latest3.children[0].src = artists[artists.length-3]["image"];
+    latest3.children[1].innerText = artists[artists.length-3]["name"];
+    latest3.children[2].innerText = artists[artists.length-3]["category"];
+    latest3.children[3].innerText = artists[artists.length-3]["details"];
+}

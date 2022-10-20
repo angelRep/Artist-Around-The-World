@@ -23,6 +23,8 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px #999999;
   font-size: calc(10px + 0.5vw);
+  color: #000000;
+  text-decoration: none;
 }
 
 .body-btn:hover {
