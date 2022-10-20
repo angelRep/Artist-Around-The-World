@@ -280,9 +280,6 @@ header {
   text-align: center;
 }
 
-.category-card-container .category-card .top-layer:hover {
-  display: none;
-}
 
 .category-card-container .category-card .top-layer div {
   margin: 0;
@@ -472,6 +469,9 @@ input:focus {
     grid-template-columns: auto auto;
   }
   
+  .latest-artists {
+    flex-direction: column;
+  }
   
   .footer-links, .developers {
     flex-direction: column;
@@ -498,9 +498,6 @@ input:focus {
   }
   .logo-heading {
     display: none;
-  }
-  .latest-artists {
-    flex-direction: column;
   }
   .category-card-container {
     margin-left: 15%;
